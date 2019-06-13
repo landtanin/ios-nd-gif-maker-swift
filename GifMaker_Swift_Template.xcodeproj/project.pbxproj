@@ -16,6 +16,10 @@
 		EDFAA91F1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91C1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift */; };
 		EDFAA9201CDA9C3100D2CB08 /* Regift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91D1CDA9C3100D2CB08 /* Regift.swift */; };
 		EDFAA9211CDA9C3100D2CB08 /* RegiftCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */; };
+		F3C5FBD922B2CC1A00A56ED5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBD822B2CC1A00A56ED5 /* WelcomeViewController.swift */; };
+		F3C5FBDB22B2CC2A00A56ED5 /* GifEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDA22B2CC2A00A56ED5 /* GifEditorViewController.swift */; };
+		F3C5FBDD22B2CC3600A56ED5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDC22B2CC3600A56ED5 /* PreviewViewController.swift */; };
+		F3C5FBE022B2CC7700A56ED5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDF22B2CC7700A56ED5 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		EDFAA91C1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAssetImageGeneratorTimePoints.swift; sourceTree = "<group>"; };
 		EDFAA91D1CDA9C3100D2CB08 /* Regift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regift.swift; sourceTree = "<group>"; };
 		EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegiftCaption.swift; sourceTree = "<group>"; };
+		F3C5FBD822B2CC1A00A56ED5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F3C5FBDA22B2CC2A00A56ED5 /* GifEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifEditorViewController.swift; sourceTree = "<group>"; };
+		F3C5FBDC22B2CC3600A56ED5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		F3C5FBDF22B2CC7700A56ED5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,8 @@
 		EDFAA8EB1CDA99A500D2CB08 /* GifMaker_Swift_Template */ = {
 			isa = PBXGroup;
 			children = (
+				F3C5FBDE22B2CC6300A56ED5 /* Extension */,
+				F3C5FBD722B2CBFB00A56ED5 /* View Controllers */,
 				EDFAA8EC1CDA99A500D2CB08 /* AppDelegate.swift */,
 				A94CC3D71D21C85A00DC758E /* Assets */,
 				A94CC3D61D21C84C00DC758E /* Supporting Files */,
@@ -98,6 +108,24 @@
 				EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */,
 			);
 			name = "Regift Files";
+			sourceTree = "<group>";
+		};
+		F3C5FBD722B2CBFB00A56ED5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5FBD822B2CC1A00A56ED5 /* WelcomeViewController.swift */,
+				F3C5FBDA22B2CC2A00A56ED5 /* GifEditorViewController.swift */,
+				F3C5FBDC22B2CC3600A56ED5 /* PreviewViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F3C5FBDE22B2CC6300A56ED5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5FBDF22B2CC7700A56ED5 /* UIViewController.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFAA9201CDA9C3100D2CB08 /* Regift.swift in Sources */,
+				F3C5FBD922B2CC1A00A56ED5 /* WelcomeViewController.swift in Sources */,
+				F3C5FBDD22B2CC3600A56ED5 /* PreviewViewController.swift in Sources */,
+				F3C5FBDB22B2CC2A00A56ED5 /* GifEditorViewController.swift in Sources */,
 				EDFAA9211CDA9C3100D2CB08 /* RegiftCaption.swift in Sources */,
 				EDFAA8ED1CDA99A500D2CB08 /* AppDelegate.swift in Sources */,
+				F3C5FBE022B2CC7700A56ED5 /* UIViewController.swift in Sources */,
 				EDFAA91F1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
