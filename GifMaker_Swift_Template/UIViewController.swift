@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 import MobileCoreServices
 
+// Regift constants
+let frameCount = 16
+let delayTime: Float = 0.2
+let loopCount = 0
+
 extension UIViewController: UINavigationControllerDelegate {
   
   @IBAction func presentVideoOptions(sender: AnyObject) {
@@ -46,6 +51,12 @@ extension UIViewController: UIImagePickerControllerDelegate {
   
   public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
     dismiss(animated: true, completion: nil)
+  }
+  
+  // GIF conversion methods
+  public func convertVideoToGif(videoURL: URL) {
+    let regift = Regift(sourceFileURL: videoURL, frameCount: frameCount, delayTime: delayTime)
+    let gifURL = regift.createGif()
   }
   
 }
