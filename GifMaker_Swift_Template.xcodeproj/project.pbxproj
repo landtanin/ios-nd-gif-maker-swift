@@ -16,6 +16,7 @@
 		EDFAA91F1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91C1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift */; };
 		EDFAA9201CDA9C3100D2CB08 /* Regift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91D1CDA9C3100D2CB08 /* Regift.swift */; };
 		EDFAA9211CDA9C3100D2CB08 /* RegiftCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */; };
+		F34C5CFF22B804B100D2B787 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C5CFE22B804B100D2B787 /* UIImage.swift */; };
 		F3C5FBD922B2CC1A00A56ED5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBD822B2CC1A00A56ED5 /* WelcomeViewController.swift */; };
 		F3C5FBDB22B2CC2A00A56ED5 /* GifEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDA22B2CC2A00A56ED5 /* GifEditorViewController.swift */; };
 		F3C5FBDD22B2CC3600A56ED5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDC22B2CC3600A56ED5 /* PreviewViewController.swift */; };
@@ -34,6 +35,7 @@
 		EDFAA91C1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAssetImageGeneratorTimePoints.swift; sourceTree = "<group>"; };
 		EDFAA91D1CDA9C3100D2CB08 /* Regift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regift.swift; sourceTree = "<group>"; };
 		EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegiftCaption.swift; sourceTree = "<group>"; };
+		F34C5CFE22B804B100D2B787 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		F3C5FBD822B2CC1A00A56ED5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F3C5FBDA22B2CC2A00A56ED5 /* GifEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifEditorViewController.swift; sourceTree = "<group>"; };
 		F3C5FBDC22B2CC3600A56ED5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				F3C5FBDF22B2CC7700A56ED5 /* UIViewController.swift */,
+				F34C5CFE22B804B100D2B787 /* UIImage.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				F3C5FBDB22B2CC2A00A56ED5 /* GifEditorViewController.swift in Sources */,
 				EDFAA9211CDA9C3100D2CB08 /* RegiftCaption.swift in Sources */,
 				EDFAA8ED1CDA99A500D2CB08 /* AppDelegate.swift in Sources */,
+				F34C5CFF22B804B100D2B787 /* UIImage.swift in Sources */,
 				F3C5FBE022B2CC7700A56ED5 /* UIViewController.swift in Sources */,
 				EDFAA91F1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift in Sources */,
 			);
