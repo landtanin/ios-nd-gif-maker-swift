@@ -20,7 +20,7 @@
 		F3C5FBD922B2CC1A00A56ED5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBD822B2CC1A00A56ED5 /* WelcomeViewController.swift */; };
 		F3C5FBDB22B2CC2A00A56ED5 /* GifEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDA22B2CC2A00A56ED5 /* GifEditorViewController.swift */; };
 		F3C5FBDD22B2CC3600A56ED5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDC22B2CC3600A56ED5 /* PreviewViewController.swift */; };
-		F3C5FBE022B2CC7700A56ED5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDF22B2CC7700A56ED5 /* UIViewController.swift */; };
+		F3C5FBE022B2CC7700A56ED5 /* UIViewController+Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FBDF22B2CC7700A56ED5 /* UIViewController+Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		F3C5FBD822B2CC1A00A56ED5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F3C5FBDA22B2CC2A00A56ED5 /* GifEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifEditorViewController.swift; sourceTree = "<group>"; };
 		F3C5FBDC22B2CC3600A56ED5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
-		F3C5FBDF22B2CC7700A56ED5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		F3C5FBDF22B2CC7700A56ED5 /* UIViewController+Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Record.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 		F3C5FBDE22B2CC6300A56ED5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F3C5FBDF22B2CC7700A56ED5 /* UIViewController.swift */,
+				F3C5FBDF22B2CC7700A56ED5 /* UIViewController+Record.swift */,
 				F34C5CFE22B804B100D2B787 /* UIImage+GIF.swift */,
 			);
 			name = Extension;
@@ -214,7 +214,7 @@
 				EDFAA9211CDA9C3100D2CB08 /* RegiftCaption.swift in Sources */,
 				EDFAA8ED1CDA99A500D2CB08 /* AppDelegate.swift in Sources */,
 				F34C5CFF22B804B100D2B787 /* UIImage+GIF.swift in Sources */,
-				F3C5FBE022B2CC7700A56ED5 /* UIViewController.swift in Sources */,
+				F3C5FBE022B2CC7700A56ED5 /* UIViewController+Record.swift in Sources */,
 				EDFAA91F1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
