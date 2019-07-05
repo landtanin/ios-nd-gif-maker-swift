@@ -16,9 +16,8 @@ class GifEditorViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    if let gifURL = gifURL {
-      let gifFromRecording = UIImage.gif(url: gifURL.absoluteString)
-      gifImageView.image = gifFromRecording
+    if let gif = gif {
+      gifImageView.image = gif.gifImage
     }
   }
   
