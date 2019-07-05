@@ -58,6 +58,7 @@ extension UIViewController: UIImagePickerControllerDelegate {
   public func convertVideoToGif(videoURL: URL) {
     let regift = Regift(sourceFileURL: videoURL, frameCount: frameCount, delayTime: delayTime)
     let gifURL = regift.createGif()
+    
     displayGIF(url: gifURL!)
   }
   
