@@ -36,8 +36,14 @@ class GifEditorViewController: UIViewController {
 extension GifEditorViewController: UITextFieldDelegate {
   
   func subscribeToKeyboardNotifications() {
-    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: .UIKeyboardWillShow, object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: .UIKeyboardWillHide, object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(keyboardWillShow),
+                                           name: .UIKeyboardWillShow,
+                                           object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(keyboardWillHide),
+                                           name: .UIKeyboardWillHide,
+                                           object: nil)
   }
   
   func unsubscribeFromKeyboardNotifications() {
@@ -45,20 +51,27 @@ extension GifEditorViewController: UITextFieldDelegate {
     NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
   }
   
-  @objc func keyboardWillShow(sender: AnyObject) {
-    if self.view.frame.origin.y >= 0 {
-      var rect = self.view.frame
-//      rect.origin.y -=
+  @objc func keyboardWillShow(notification: NSNotification) {
+    if view.frame.origin.y >= 0 {
+      view.frame.origin.y -= self.getKeyboardHeight(notification: notification)
     }
   }
   
-  @objc func keyboardWillHide(sender: AnyObject) {
-    
+  @objc func keyboardWillHide(notification: NSNotification) {
+    if view.frame.origin.y < 0 {
+      view.frame.origin.y += self.getKeyboardHeight(notification: notification)
+    }
   }
   
   func getKeyboardHeight(notification: NSNotification) -> CGFloat {
-//    let userInfo = notification.userInfo
-    
+    guard let userInfo = notification.userInfo else {
+      return 0.0
+    }
+    guard let keyboardFrameEnd = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue else {
+      return 0.0
+    }
+    return keyboardFrameEnd.cgRectValue.height
+
   }
   
   func textFieldDidBeginEditing(_ textField: UITextField) {
