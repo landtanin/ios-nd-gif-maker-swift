@@ -28,15 +28,22 @@ class GifEditorViewController: UIViewController {
       gifImageView.image = gif.gifImage
     }
     
-//    let defaultAttributes: [CFString:Any] = [kCTStrokeColorAttributeName: UIColor.black,
-//                                      kCTStrokeWidthAttributeName: -4,
-//                                      kCTForegroundColorAttributeName: UIColor.white,
-//                                      kCTFontAttributeName: UIFont.fontNames(forFamilyName: "HelveticaNeue-CondensedBlack")
-//      ]
-//    
-//    self.captionTextField.defaultTextAttributes = defaultAttributes as [String : Any]
-//    self.captionTextField.textAlignment = .center
-//    self.captionTextField.attributedPlaceholder = NSAttributedString.init(string: "Add Caption", attributes: defaultAttributes as [NSAttributedStringKey : Any])
+    let defaultAttributes: [String:Any] = [NSAttributedStringKey.strokeColor.rawValue: UIColor.black,
+                             NSAttributedStringKey.strokeWidth.rawValue: -4,
+                             NSAttributedStringKey.foregroundColor.rawValue: UIColor.white,
+                             NSAttributedStringKey.font.rawValue: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40.0)!
+    ]
+
+    let defaultPlaceholderAttributes: [NSAttributedStringKey : Any] = [NSAttributedStringKey.strokeColor: UIColor.black,
+                                           NSAttributedStringKey.strokeWidth: -4,
+                                           NSAttributedStringKey.foregroundColor: UIColor.white,
+                                           NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40.0)!
+      ]
+
+    
+    self.captionTextField.defaultTextAttributes = defaultAttributes
+    self.captionTextField.textAlignment = .center
+    self.captionTextField.attributedPlaceholder = NSAttributedString.init(string: "Add Caption", attributes: defaultPlaceholderAttributes)
     
     captionTextField.delegate = self
     
@@ -93,7 +100,7 @@ extension GifEditorViewController: UITextFieldDelegate {
       return 0.0
     }
     return keyboardFrameEnd.cgRectValue.height
-
+    
   }
   
   func textFieldDidBeginEditing(_ textField: UITextField) {
