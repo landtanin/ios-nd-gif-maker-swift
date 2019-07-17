@@ -205,6 +205,9 @@
                     <navigationItem key="navigationItem" title="Title" id="98w-hN-q9u">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="kvy-5V-EgW">
                             <color key="tintColor" red="1" green="0.25490196079999999" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="presentPreview:" destination="gN0-HT-VRx" id="c3b-sI-e9Y"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -246,7 +249,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="shareGif:" destination="cB7-Y1-ZFX" eventType="touchUpInside" id="wKt-Wa-rAo"/>
+                                            <action selector="shareGifWithSender:" destination="cB7-Y1-ZFX" eventType="touchUpInside" id="RjD-Ht-sfq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoi-MZ-GNH">
@@ -277,7 +280,7 @@
                     <connections>
                         <outlet property="gifImageView" destination="HQu-c2-zTO" id="VOG-4h-XyU"/>
                         <outlet property="saveButton" destination="xoi-MZ-GNH" id="pLU-fK-aKW"/>
-                        <outlet property="shareButton" destination="lnU-9g-0xe" id="pLb-6X-2jc"/>
+                        <outlet property="shareButton" destination="lnU-9g-0xe" id="Gk8-0U-Kgt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCC-tI-bRp" userLabel="First Responder" sceneMemberID="firstResponder"/>

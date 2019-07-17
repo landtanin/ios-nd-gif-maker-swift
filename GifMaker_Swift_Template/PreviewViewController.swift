@@ -15,7 +15,7 @@ class PreviewViewController: UIViewController {
   @IBOutlet weak var shareButton: UIButton!
   @IBOutlet weak var saveButton: UIButton!
   
-  let gif:Gif? = nil
+  var gif:Gif? = nil
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
